@@ -1,0 +1,19 @@
+{
+  "name": "api-health-check",
+  "version": "0.1.0",
+  "description": "health check",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "author": "Watchanon Numnam",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.13.4",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0",
+    "supertest": "^1.2.0"
+  }
+}
