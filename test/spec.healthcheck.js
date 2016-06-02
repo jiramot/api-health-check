@@ -26,6 +26,7 @@ describe('api-health-check', function () {
       next = sinon.stub()
       sinon.stub(process, 'uptime').returns(100)
     })
+
     afterEach(function () {
       process.uptime.restore()
     })
@@ -50,7 +51,21 @@ describe('api-health-check', function () {
       res.status.should.have.been.calledBefore(res.json)
       res.json.should.have.been.calledWith({uptime: 100})
     })
+
+    describe('With options', function () {
+      it('should return 200 when inject an options', function () {
+        healthcheck({
+          mongoose: function () {
+            return {mongoose: true};
+
+          }
+        })(req, res, next)
+        res.status.should.have.been.calledBefore(res.json)
+      })
+
+    })
   })
+
 
   it('integrates with an express server', function (done) {
     var app = require('express')()

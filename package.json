@@ -8,9 +8,9 @@
   },
   "author": "Watchanon Numnam",
   "license": "ISC",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/jiramot/api-health-check"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiramot/api-health-check"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -19,5 +19,8 @@
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
   }
 }
