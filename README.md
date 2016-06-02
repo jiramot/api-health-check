@@ -1,17 +1,17 @@
-# express-healthcheck
+# api-health-check
 Super-simple healthcheck middleware for express
 
 
 ## Installation
 
 ```
-npm install express-healthcheck
+npm install api-health-check
 ```
 
 ## Usage
 
 ```
-app.use('/healthcheck', require('express-healthcheck')());
+app.use('/healthcheck', require('api-health-check')());
 ```
 
 This will respond with a JSON payload of `{ "uptime": [uptime in seconds] }` and a 200 status code.
@@ -19,7 +19,7 @@ This will respond with a JSON payload of `{ "uptime": [uptime in seconds] }` and
 The healthy response can be customised by passing in a custom `healthy` method.
 
 ```
-app.use('/healthcheck', require('express-healthcheck')({
+app.use('/healthcheck', require('api-health-check')({
     healthy: function () {
         return { everything: 'is ok' };
     }
@@ -31,7 +31,7 @@ You can optionally provide a test method which will be executed to establish the
 This function can either throw, return an error, or call a callback with an error. Functions with an arity of 0 will expect a return, functions with an arity of 1 will expect a callback.
 
 ```
-app.use('/healthcheck', require('express-healthcheck')({
+app.use('/healthcheck', require('api-health-check')({
     test: function () {
         throw new Error('Application is not running');
     }
@@ -39,7 +39,7 @@ app.use('/healthcheck', require('express-healthcheck')({
 ```
 
 ```
-app.use('/healthcheck', require('express-healthcheck')({
+app.use('/healthcheck', require('api-health-check')({
     test: function () {
         return { state: 'unhealthy' };
     }
@@ -47,9 +47,9 @@ app.use('/healthcheck', require('express-healthcheck')({
 ```
 
 ```
-app.use('/healthcheck', require('express-healthcheck')({
+app.use('/healthcheck', require('api-health-check')({
     test: function (callback) {
         callback({ state: 'unhealthy' });
     }
 }));
-```# api-health-check
+```
