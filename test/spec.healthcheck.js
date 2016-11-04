@@ -77,7 +77,6 @@ describe('api-health-check', function () {
       .get('/healthcheck')
       .expect(200)
       .expect(function (res) {
-        console.log(res.body)
         res.body.should.have.property('uptime')
         res.body.should.have.property('environment')
         res.body.should.have.property('build')
