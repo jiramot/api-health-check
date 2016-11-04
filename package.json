@@ -1,17 +1,59 @@
 {
-  "name": "api-health-check",
-  "version": "0.1.2",
+  "_args": [
+    [
+      {
+        "name": "api-health-check",
+        "raw": "api-health-check@^0.1.4",
+        "rawSpec": "^0.1.4",
+        "scope": null,
+        "spec": ">=0.1.4 <0.2.0",
+        "type": "range"
+      },
+      "/Users/jiramot/workspaces/fungjai/external-trigger"
+    ]
+  ],
+  "_from": "api-health-check@>=0.1.4 <0.2.0",
+  "_id": "api-health-check@0.1.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/api-health-check",
+  "_nodeVersion": "6.2.2",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/api-health-check-0.1.4.tgz_1467094906557_0.3453562860377133"
+  },
+  "_npmUser": {
+    "email": "jiramot@gmail.com",
+    "name": "jiramot"
+  },
+  "_npmVersion": "3.9.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "api-health-check",
+    "raw": "api-health-check@^0.1.4",
+    "rawSpec": "^0.1.4",
+    "scope": null,
+    "spec": ">=0.1.4 <0.2.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/api-health-check/-/api-health-check-0.1.4.tgz",
+  "_shasum": "28495a0cd1693abb47d7a8c99465b026fdd7cd1f",
+  "_shrinkwrap": null,
+  "_spec": "api-health-check@^0.1.4",
+  "_where": "/Users/jiramot/workspaces/fungjai/external-trigger",
+  "author": {
+    "name": "Watchanon Numnam"
+  },
+  "bugs": {
+    "url": "https://github.com/jiramot/api-health-check/issues"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
   "description": "health check",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha ./test"
-  },
-  "author": "Watchanon Numnam",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jiramot/api-health-check"
-  },
   "devDependencies": {
     "chai": "^3.5.0",
     "express": "^4.13.4",
@@ -20,7 +62,30 @@
     "sinon-chai": "^2.8.0",
     "supertest": "^1.2.0"
   },
-  "dependencies": {
-    "underscore": "^1.8.3"
-  }
+  "directories": {},
+  "dist": {
+    "shasum": "28495a0cd1693abb47d7a8c99465b026fdd7cd1f",
+    "tarball": "https://registry.npmjs.org/api-health-check/-/api-health-check-0.1.4.tgz"
+  },
+  "gitHead": "085160650e13fdd4c2dfe2203301478535f4b1e8",
+  "homepage": "https://github.com/jiramot/api-health-check#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "jiramot@gmail.com",
+      "name": "jiramot"
+    }
+  ],
+  "name": "api-health-check",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiramot/api-health-check.git"
+  },
+  "scripts": {
+    "test": "mocha ./test"
+  },
+  "version": "0.1.4"
 }
